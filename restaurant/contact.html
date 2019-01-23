@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<title>Contact Us</title>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+		
+<style>
+			
+	header h1 {
+		font-family: 'Tangerine', sans-serif;
+		font-size: 5em;
+		padding-top: 8px;
+		text-shadow: 8px 4px 6px #444;
+	}
+
+	form label {
+		font-weight: bold;
+		padding-right: 5px;
+	}
+			
+</style>
+		
+	</head>
+	<body>
+	<div class="container-fluid">
+		<header class="jumbotron">
+		<h1 align="center">Bella Notte</h1>
+			<div>
+				<p>We're opening a new location!</p>
+			</div><!--closes smaller element div-->
+		</header>
+		<noscript><h1>This site is best viewed when JavaScript is enabled.</h1></noscript>
+	<nav>
+		<hr />
+		<p><a href="index.html" class="btn badge-pill"><span style="color: #fef9ff;"><i class="fas fa-home"></a></i></span>		<a href="menu.html" class="btn badge-pill">Menu</a>		<a href="contact.html" class="btn badge-pill">Contact Us</a>
+		<hr />
+	</nav>
+	<div class="row">
+	<div id="contact" class="form-group col-lg-4 col-md-5 col-sm-7 col-xs-7">
+		
+		<form action="contact.html" method="POST" class="was-validated">
+		<p><label for="name">Name: </label>
+			<input type="text" class="form-control" id="name" name="name" required /></p>
+		<p><label for="email">Email: </label>
+			<input type="email" class="form-control" id="email" name="email" required /></p>
+		<p><label for="phone">Phone: </label>
+			<input type="text" class="form-control" id="phone" name="phone" required /></p>
+		<p><label for="inquiry">Reason for Inquiry</label>
+
+		<select required aria-required="true" class="form-control" id="inquiry" name="inquiry">
+			<option value="">--Select One--</option>
+			<option value="catering">Catering</option>
+			<option value="wedding">Wedding</option>
+			<option value="business">Business</option>
+		</select></p>
+		<p><label for="textarea">Additional Information: </label>
+			<textarea class="form-control" id="textarea" rows="4"></textarea>
+		<div class="form-check col-lg-12">
+			<p>Have you been to the restaurant? 
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="visited" value="No" checked>
+					<label class="form-check-label" for="visited">No</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="visited" value="Yes">
+					<label class="form-check-label" for="visited">Yes</label>
+				</div>
+			
+			<p>Best days to contact you: </p>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="Monday" name="contact" value="" />
+				<label class="form-check-label" for="Monday">M</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="Tuesday" name="contact" value="" />
+				<label class="form-check-label" for="Monday">T</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="Wednesday" name="contact" value="" />
+				<label class="form-check-label" for="Monday">W</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="Thursday" name="contact" value="" />
+				<label class="form-check-label" for="Monday">Th</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="Friday" name="contact" value="" />
+				<label class="form-check-label" for="Monday">F</label>
+			</div>
+			<br />
+			<br />
+			<button class="btn btn-success" style="margin-bottom: 22.5%;" type="submit" onclick="valid()">Submit</button>
+		</div><!--closes form check div-->
+		</div><!--closes contact div-->
+	</div><!--closes row div-->
+
+		
+			<div class="footer col-xs-12;">
+			<footer style="box-sizing: content-box;">
+				<p align="center">1125 Lovers Way, Oxford, MS 38655</p>
+				<p align="center">(235) 526-6883</p>
+			</footer>
+			</div>
+		
+			
+		
+	</div><!--closes fluid-container div-->
+	<script src="valid.js"></script>	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	
+	</body>
+</html>
